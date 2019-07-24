@@ -1,0 +1,33 @@
+package com.riptide.services;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+
+@Path("/riphello")
+public class Hello {
+	
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String sayPlainHello() {
+		return "Hello! Wassup";
+	}
+	
+	@Path("/welcome")
+	@GET
+	@Produces("text/html")
+	public String sayHtmlHello() {
+		return "<body bgcolor='aqua'>"
+				+ "<p>Welcome to Zensar html</p>"
+				+ "</body>";
+	}
+	
+	@Path("/welcomexml")
+	@GET
+	@Produces(MediaType.APPLICATION_XML)
+	public String sayXmlHello() {
+		return "<?xml version='1.0'"
+				+ "<messages>"
+				+ "<message>This shit written in Xml</message>"
+				+ "</messages>";
+	}
+}

@@ -1,0 +1,13 @@
+INDEX VERSION 1.131+D:\Batch - 5\Java\RestFullWebService\.metadata\.plugins\org.eclipse.jdt.core
+818220355.index
+4274239488.index
+772973495.index
+2636664818.index
+2555356345.index
+3352516461.index
+1053118629.index
+1533682438.index
+3683745723.index
+1953307524.index
+2447874270.index
+1381363516.index
