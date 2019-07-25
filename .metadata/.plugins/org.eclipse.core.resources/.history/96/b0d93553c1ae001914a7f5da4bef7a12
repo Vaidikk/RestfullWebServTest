@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="http://localhost:8091/HelloWebService/riprest/fileuploads/upload" method="post">
+		Upload File: <input type="file">
+		<br><br><input type="submit" value="Upload">
+	</form>
+</body>
+</html>

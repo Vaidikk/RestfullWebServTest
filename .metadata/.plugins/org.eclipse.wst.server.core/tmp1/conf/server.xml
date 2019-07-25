@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\Batch - 5\Java\RestFullWebService\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Batch - 5\Java\RestFullWebService\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\HelloWebService" path="/HelloWebService" reloadable="true" source="org.eclipse.jst.jee.server:HelloWebService"/></Host>
+      <Context docBase="D:\Batch - 5\Java\RestFullWebService\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Batch - 5\Java\RestFullWebService\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\HelloWebService" path="/HelloWebService" reloadable="true" source="org.eclipse.jst.jee.server:HelloWebService"/><Context docBase="D:\Batch - 5\Java\RestFullWebService\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\TribagoHotels" path="/TribagoHotels" reloadable="true" source="org.eclipse.jst.jee.server:TribagoHotels"/></Host>
     </Engine>
   </Service>
 </Server>

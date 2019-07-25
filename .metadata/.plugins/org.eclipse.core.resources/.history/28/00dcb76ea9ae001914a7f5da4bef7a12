@@ -1,0 +1,8 @@
+package com.riptide.services;
+
+import javax.ws.rs.*;
+
+@Path("/files")
+public class HelloDownload {
+
+}

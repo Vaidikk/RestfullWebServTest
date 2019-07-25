@@ -1,0 +1,28 @@
+package com.riptide.services;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.Response;
+
+@Path("/ripparam")
+public class HelloParam {
+	
+	@Path("/welcome/{nm}")
+	@GET
+	@Produces("text/html")
+	public Response getMessage(@PathParam("nm") String name) {
+		return Response
+				.status(200)
+				.entity("<p>Hello <b>"+name+"</b> Welcome to the Service</p>")
+				.build();
+	}
+	
+	@Path("/welcome/{dd}/{mm}/{yyyy}")
+	@GET
+	@Produces("text/html")
+	public Response getMessage(@PathParam("dd") int day, @PathParam("mm") int month, @PathParam("yyyy") int year) {
+		return Response
+				.status(200)
+				.entity("<p>Your birthday, in case you didn't know: <b>"+day+"/"+month+"/"+year+"</b> Cheers!!</p>")
+				.build();
+	}
+}

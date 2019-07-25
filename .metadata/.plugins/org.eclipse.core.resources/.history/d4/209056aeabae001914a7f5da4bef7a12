@@ -1,0 +1,32 @@
+package com.riptide.services;
+
+import java.io.File;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.ResponseBuilder;
+
+@Path("/files")
+public class HelloDownload {
+	private static String FILE_PATH = "d:/hello.txt";
+	
+	@GET
+	@Path("/txt")
+	@Produces("text/plain")
+	public Response getFile() {
+		File file = new File(FILE_PATH);
+		ResponseBuilder responseBuilder = Response.ok(file);
+		responseBuilder.header("Content-Disposition", "attachment;filename=hello_file.txt");
+		return responseBuilder.build();
+	}
+	
+	@GET
+	@Path("/images")
+	@Produces("image/png")
+	public Response getImage() {
+		File file = new File(FILE_PATH);
+		ResponseBuilder responseBuilder = Response.ok(file);
+		responseBuilder.header("Content-Disposition", "attachment;filename=hello_file.txt");
+		return responseBuilder.build();
+	}
+}
